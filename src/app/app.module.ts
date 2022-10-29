@@ -36,6 +36,7 @@ import { JwtModule } from '@auth0/angular-jwt';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenIterceptorService } from './services/token-iterceptor.service';
 import { AuthGuard } from './guard/auth.guard';
+import { LoginComponent } from './users/login/login.component';
 
 export const APP_DATE_FORMATS = {
   parse: {
@@ -51,7 +52,8 @@ export const APP_DATE_FORMATS = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
